@@ -9,6 +9,11 @@ pic2.addEventListener('mouseover', changeTitle2);
 pic2.addEventListener('mouseout', returnTitle2);
 pic2.addEventListener('mouseover', changeImg2);
 pic2.addEventListener('mouseout', returnImg2);
+const pic3 = document.querySelector('.Italy')
+pic3.addEventListener('mouseover', changeTitle3);
+pic3.addEventListener('mouseout', returnTitle3);
+pic3.addEventListener('mouseover', changeImg3);
+pic3.addEventListener('mouseout', returnImg3);
 
 
 function changeTitle(){
@@ -43,4 +48,22 @@ function changeImg2(){
 
 function returnImg2(){
     document.querySelector('.Ethiopia').src ="images/ethiopiaFlag.jpg";
+}
+
+//for third image
+
+function changeTitle3(){
+    document.querySelector('.title').innerHTML = "Italy";
+}
+
+function returnTitle3(){
+    document.querySelector('.title').innerHTML = "Countries and Flags";
+}
+
+function changeImg3(){
+    document.querySelector('.Italy').src ="images/Italy-Map_3x2.webp";
+}
+
+function returnImg3(){
+    document.querySelector('.Italy').src ="images/italian-flag.jpg";
 }
